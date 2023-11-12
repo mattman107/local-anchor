@@ -21,11 +21,14 @@ Game.MaxPlayers = 8;
 //Not sure about this one yet
 Game.BinariesFolder = "";
 
-Game.HookFocus = true;
+Game.SupportsMultipleKeyboardsAndMice = true;
+Game.KeyboardPlayerFirst = true;			//If the keyboard player should be processed first.
+
+Game.HookFocus = false;
 Game.Hook.ForceFocus = true;
-Game.HasDynamicWindowTitle = true;
+Game.HasDynamicWindowTitle = false;
 Game.Hook.ForceFocusWindowName = "Ship of Harkinian (DirectX 11)";
-Game.ResetWindows = true;
+Game.ResetWindows = false;
 Game.RefreshWindowAfterStart = true;
 
 
@@ -39,7 +42,7 @@ Game.PauseBetweenProcessGrab = 5;
 Game.PauseBetweenStarts = 10;
 
 Game.ProcessChangesAtEnd = true;			//Do the resizing, repositioning and post-launch hooking of all game instances at the very end | will not work with every option ran normally.
-// Game.PromptProcessChangesAtEnd = true;			//If ProcessChangesAtEnd = true, pause and show a prompt, before making changes to processes.
+Game.PromptProcessChangesAtEnd = false;			//If ProcessChangesAtEnd = true, pause and show a prompt, before making changes to processes.
 
 
 
@@ -74,7 +77,7 @@ Game.ProtoInput.MultipleProtoControllers = true;
 Game.Play = function() {
 	
 //Proto Input
-Game.SupportsMultipleKeyboardsAndMice = true;
+
 
 
 Game.LockInputAtStart = false;
