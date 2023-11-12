@@ -21,14 +21,14 @@ Game.MaxPlayers = 8;
 //Not sure about this one yet
 Game.BinariesFolder = "";
 
-Game.SupportsMultipleKeyboardsAndMice = true;
-Game.KeyboardPlayerFirst = true;			//If the keyboard player should be processed first.
+Game.SupportsKeyboard = true;
+//Game.SupportsMultipleKeyboardsAndMice = true;
 
 Game.HookFocus = false;
 Game.Hook.ForceFocus = true;
 Game.HasDynamicWindowTitle = false;
 Game.Hook.ForceFocusWindowName = "Ship of Harkinian (DirectX 11)";
-Game.ResetWindows = false;
+Game.ResetWindows = true;
 Game.RefreshWindowAfterStart = true;
 
 
