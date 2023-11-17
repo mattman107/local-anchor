@@ -16,7 +16,7 @@ This is a Nucleus Co-op handler for the Ship of Harkinian OOT PC port.
 # Current Limitations 
 1) Nucleus Co-op only works on Windows so this solution won't work for all computers.
 2) ~~Only XInput compatible gamepads will work (no keyboards). The mouse can be used to access the imgui menus on all running instances of the game.~~ One keyboard and every other input XInput gamepads now supported.
-3) Currently you will have to manually assign which gamepad works for each individual instance of SOH in the imgui menu. I may change this in the future to automatically work, but I have been told that will limit the amount of players to 4. I'm looking for some feedback on this before I try and get this handler approved by the [official repository of these handlers](https://hub.splitscreen.me/).
+3) Currently you will have to manually assign which gamepad works for each individual instance of SOH in the imgui menu.
 
 
 # Special Thanks
