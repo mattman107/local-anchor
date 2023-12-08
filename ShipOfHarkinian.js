@@ -4,9 +4,9 @@ Game.SymlinkExe = false;                                //If SymlinkGame is enab
 Game.SymlinkFolders = false;                //Folders by default are hardcopied, with this enabled, folders will be symlinked instead | warning files placed in symlink folders will appear in the original game files too.
 Game.KeepSymLinkOnExit = true;                 //Enable or disable symlink files from being deleted when Nucleus is closed | default: false.
 
-Game.DirSymlinkExclusions = ["Save", "mods","Randomizer"];     //Array with the name of the folders you don't want Nucleus Co-op to symlink, only the folders placed here get hardcopied not the files.
-Game.FileSymlinkExclusions = ["imgui.ini", "global.sav", "file1.sav", "file2.sav", "file3.sav"]; //Array with the name of the files you don't want Nucleus Co-op to symlink, useful if you want to replace files or add external files.  
-Game.FileSymlinkCopyInstead = ["shipofharkinian.json", "oot.otr", "soh.otr", "gamecontrollerdb.txt"]; //Array with the name of the files you want Nucleus Co-op to make full copies of, in some cases games need certain files to be full copies or they won't run. 
+Game.DirSymlinkExclusions = ["Save", "mods","Randomizer", "logs"];     //Array with the name of the folders you don't want Nucleus Co-op to symlink, only the folders placed here get hardcopied not the files.
+Game.FileSymlinkExclusions = ["imgui.ini", "global.sav", "file1.sav", "file2.sav", "file3.sav", "Ship of Harkinian.log"]; //Array with the name of the files you don't want Nucleus Co-op to symlink, useful if you want to replace files or add external files.  
+Game.FileSymlinkCopyInstead = ["shipofharkinian.json"]; //Array with the name of the files you want Nucleus Co-op to make full copies of, in some cases games need certain files to be full copies or they won't run. 
 
 Game.DirSymlinkCopyInstead = ["Randomizer"];	//Copy (not symlink) all files within a given folder | Folder name is relative from root game folder.
 Game.DirSymlinkCopyInsteadIncludeSubFolders = true;	//When specifying folder(s) to copy all its contents instead of linking, should subfolders and files be included as well?
