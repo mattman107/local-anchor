@@ -8,7 +8,6 @@ Game.DirSymlinkExclusions = ["Save", "mods","Randomizer", "logs"];     //Array w
 Game.FileSymlinkExclusions = ["imgui.ini", "global.sav", "file1.sav", "file2.sav", "file3.sav", "Ship of Harkinian.log"]; //Array with the name of the files you don't want Nucleus Co-op to symlink, useful if you want to replace files or add external files.  
 Game.FileSymlinkCopyInstead = ["shipofharkinian.json"]; //Array with the name of the files you want Nucleus Co-op to make full copies of, in some cases games need certain files to be full copies or they won't run. 
 
-Game.DirSymlinkCopyInstead = ["Randomizer"];	//Copy (not symlink) all files within a given folder | Folder name is relative from root game folder.
 Game.DirSymlinkCopyInsteadIncludeSubFolders = true;	//When specifying folder(s) to copy all its contents instead of linking, should subfolders and files be included as well?
 
 
